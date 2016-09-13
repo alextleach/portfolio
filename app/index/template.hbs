@@ -15,7 +15,7 @@
               </li>
               <li class="nav__right__menu__item"><a href="#skills">Skills</a></li>
               <li class="nav__right__menu__item"><a href="#portfolio">Portfolio</a></li>
-              <li class="nav__right__menu__item">Contact</li>
+              <li class="nav__right__menu__item"><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -49,29 +49,142 @@
     <a href="#skills">{{fa-icon "arrow-down" fixedWidth="true" }}</a>
   </div>
 </div>
-<div class="skills">
+<div class="skills" id="skills">
   <div class="skills__gradient">
-    <div class="skills__box">
-      <div class="skills__heading" id="skills">
-        Skills
-      </div>
-      <div class="skills__content">
-        <div class="skills__content__1">
-          <p>{{fa-icon "cubes" fixedWidth="true"}} <strong>Web Development</strong></p>
-          <p>HTML5, CSS, JavaScript, SASS, Ember-CLI, Ember Data, Bower, Node.js, NPM, Adonis, Github, PostgreSQL, Heroku, Materialize, responsive web design.</p>
+    <div class="portfolio__container">
+      <div class="skills__box">
+        <div class="skills__heading">
+          Skills
         </div>
-        <div class="skills__content__2">
-          <p>{{fa-icon "paint-brush" fixedWidth="true"}} <strong>Web Design</strong></p>
-          <p>Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
+        <div class="skills__content">
+          <div class="skills__content__1">
+            <p>{{fa-icon "cubes" fixedWidth="true"}} <strong>Web Development</strong></p>
+            <p>HTML5, CSS, JavaScript, SASS, Ember-CLI, Ember Data, Bower, Node.js, NPM, Adonis, Github, PostgreSQL, Heroku, Materialize, responsive web design.</p>
+          </div>
+          <div class="skills__content__2">
+            <p>{{fa-icon "paint-brush" fixedWidth="true"}} <strong>Web Design</strong></p>
+            <p>Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 <div class="portfolio" id="portfolio">
-  <div class="container">
+  <div class="portfolio__container">
     <div class="portfolio__box">
-    <div class="portfolio__heading">Portfolio</div>
+      <div class="portfolio__heading">Portfolio</div>
+      <div class="portfolio__grid">
+        <div class="portfolio__grid__item">
+          <a href="http://kin-parenting.surge.sh/" target="_blank">
+            <div class="portfolio__grid__item__info">
+              <strong>Kin</strong>
+              <p>My final project at the Iron Yard. A fully functioning (beta) app for parents looking for babysitters or playdates. The app includes 2 types of users, image uploads, messaging, and user likes/ratings. Built using Ember.js and Adonis.</p>
+            </div>
+            <div class="portfolio__grid__pic">
+              <img src="/img/kin.png" class="portfolio__grid__pic__img" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="portfolio__grid__item">
+          <div class="portfolio__grid__item__info">
+            <strong>Todos</strong>
+            <p>I built an app using Ember.js that mimics groups of Todo lists. The content is randomly generated using Mirage and faker.</p>
+          </div>
+          <div class="portfolio__grid__pic">
+            <img src="/img/todos.png" class="portfolio__grid__pic__img" alt="">
+          </div>
+        </div>
+        <div class="portfolio__grid__item">
+          <a href="http://atl-puppies.surge.sh/" target="_blank">
+            <div class="portfolio__grid__item__info">
+              <strong>Puppy Adoption</strong>
+              <p>A mockup of a puppy adoption web app. Users can add, delete, and edit puppies' profiles. Built entirely with vanilla javascript!</p>
+            </div>
+            <div class="portfolio__grid__pic">
+              <img src="/img/puppies.png" class="portfolio__grid__pic__img" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="portfolio__grid__item">
+          <a href="http://atl-runtimer.surge.sh/" target="_blank">
+            <div class="portfolio__grid__item__info">
+              <strong>Run Timer</strong>
+              <p>My first project utilizing Ember.js. Users can document and edit their run times. The focus was on dynamic IDs and styling that works on any window size.</p>
+            </div>
+            <div class="portfolio__grid__pic">
+              <img src="img/runtimer.png" class="portfolio__grid__pic__img" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="portfolio__grid__item">
+          <a href="http://atl-marvel.surge.sh/" target="_blank">
+            <div class="portfolio__grid__item__info">
+              <strong>Marvel API</strong>
+              <p>I built a page for the Spider Girl comic series using Marvel Developer's API. The focus was on fetching and organizing data from a pre-existing API. I really enjoyed styling this project, especially the "Read More" modals.</p>
+            </div>
+            <div class="portfolio__grid__pic">
+              <img src="/img/marvel.png" class="portfolio__grid__pic__img" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="portfolio__grid__item">
+          <a href="http://atl-tshirts.surge.sh/" target="_blank">
+            <div class="portfolio__grid__item__info">
+              <strong>T-Shirt Mock Up</strong>
+              <p>The goal of this project was to build a mock up of a T-Shirt store that is fully responsive at any size. Built using SASS.</p>
+            </div>
+            <div class="portfolio__grid__pic">
+              <img src="/img/shirts.png" class="portfolio__grid__pic__img" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="hero__next portfolio__next">
+    <a href="#contact">{{fa-icon "envelope-o" fixedWidth="true" }}</a>
+  </div>
+</div>
+<div class="contact" id="contact">
+  <div class="contact__gradient">
+    <div class="portfolio__container">
+      <div class="contact__box">
+        <div class="portfolio__heading contact__heading">Contact</div>
+        <div class="contact__info">
+          <p>Thank you for visiting. Let's keep in touch.</p>
+          <p><a href="mailto:alextleach@gmail.com" target="_top"><strong>{{fa-icon "envelope" fixedWidth="true" }} alextleach@gmail.com</strong></a></p>
+          <p>
+            <a href="http://github.com/alextleach">
+            {{#fa-stack size="lg" as |s|}}
+              {{s.stack-2x "circle"}} {{s.stack-1x "github-alt" fixedWidth="true"}}
+            {{/fa-stack}}
+          </a>
+            <a href="http://linkedin.com/in/alextleach">
+            {{#fa-stack size="lg" as |s|}}
+              {{s.stack-2x "circle"}} {{s.stack-1x "linkedin" fixedWidth="true"}}
+            {{/fa-stack}}
+          </a>
+            <a href="http://instagram.com/alextleach">
+            {{#fa-stack size="lg" as |s|}}
+              {{s.stack-2x "circle"}} {{s.stack-1x "instagram" fixedWidth="true"}}
+            {{/fa-stack}}
+          </a>
+            <a href="https://open.spotify.com/user/alextleach">
+            {{#fa-stack size="lg" as |s|}}
+              {{s.stack-2x "circle"}} {{s.stack-1x "spotify" fixedWidth="true"}}
+            {{/fa-stack}}
+          </a>
+            <a href="http://twitter.com/alextleach">
+            {{#fa-stack size="lg" as |s|}}
+              {{s.stack-2x "circle"}} {{s.stack-1x "twitter" fixedWidth="true"}}
+            {{/fa-stack}}
+          </a>
+
+          </p>
+          <h6>Art by Alex T Leach. Photo by <a href="http://gabrielmaxstarner.tumblr.com/">Gabriel Max Starner</a></h6>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
