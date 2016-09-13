@@ -50,21 +50,63 @@
     width: 97%;
   }
 
+  .first {
+    height: 100vh;
+  }
+
   .nav {
+    &__title {
+      font-size: 2.5rem;
+
+      &__sub {
+        font-size: 0.9rem;
+      }
+    }
+
     &__content {
+      width: 100%;
       flex-direction: column;
       text-align: center;
     }
+
+    &__right {
+      width: 100%;
+
+      &__menu {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: center;
+
+        &__item {
+          font-size: 1.01rem;
+        }
+      }
+    }
   }
 
-  &__right {
-    &__menu {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      text-align: center;
+  .hero {
+    height: 100vh;
+    background-image: url('/img/viceversa-iphone.jpg');
+    background-size: auto;
+    overflow: hidden;
+    background-attachment: scroll;
+    background-position: top;
 
-      &__item {
-        margin: auto;
+    &__next {
+      opacity: 0.92;
+      background: transparent;
+      border-radius: 50%;
+      color: #fff;
+      z-index: 9999;
+      font-size: 3.7rem;
+      bottom: 0;
+      text-shadow: 0.2rem 0.2rem 0.2rem rgba(#444444,.87);
+
+      &:hover {
+        color: #c8c8c8;
+        bottom: -0.3rem;
       }
     }
   }
@@ -79,9 +121,8 @@
       padding: 0 0 4rem;
 
       &__1 {
-        width: 70%;
+        width: 90%;
         margin: auto;
-        text-align: justify;
         padding: 3rem 1rem;
 
         &__content {
@@ -92,10 +133,8 @@
       &__2 {
         width: 100%;
         height: 75vh;
+        margin-top: 0;
 
-        &__pic {
-          &::before {}
-        }
       }
     }
   }
@@ -105,20 +144,28 @@
   }
 
   .skills {
-    height: 75vh;
+    height: 90vh;
+    background-image: url('/img/palmer3gray-iphone.jpg');
+    background-size: auto;
+    background-attachment: scroll;
 
     &__heading {
+      font-size: 2.2rem;
       padding: 1.5rem 0.5rem;
     }
 
     &__box {
       padding: 0.5rem;
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
     }
 
     &__content {
       flex-direction: column;
+
+      strong {
+        font-size: 1.1rem;
+      }
 
       &__1 {
         width: 100%;
@@ -126,16 +173,22 @@
 
       &__2 {
         width: 100%;
+        padding-bottom: 3rem;
       }
+    }
+
+    &__next {
+      display: none;
     }
   }
 
   .portfolio {
     &__box {
-      padding: 0;
+      padding: 2rem 0 0;
     }
 
     &__heading {
+      font-size: 2.8rem;
       align-self: center;
       margin: 4rem auto;
     }
@@ -143,9 +196,9 @@
     &__grid {
       &__item {
         width: 100%;
-        margin: 0;
+        margin: 0.4rem 1rem;
         border-radius: 0;
-        //
+        // ----- if i want to remove hovers ----
         // &__info {
         //   opacity: 1;
         //   background: rgba(#454444,.69);
@@ -158,14 +211,21 @@
         //   transition: filter 200ms linear, -webkit-filter 200ms linear;
         // }
         &:last-of-type {
-          margin-bottom: 20%;
+          margin-bottom: 8rem;
         }
       }
+    }
+
+    &__next {
+      display: none;
     }
   }
 
   .contact {
     min-height: 85vh;
+    background-image: url('/img/blushgray-iphone.jpg');
+    background-size: auto;
+    background-attachment: scroll;
 
     &__box {
       min-height: 50vh;
@@ -177,6 +237,7 @@
 
     &__info {
       padding: 0.5rem 0;
+      font-size: 0.95rem;
     }
   }
 }

@@ -21,7 +21,6 @@ body {
 .nav {
   background: rgba(#fff,.95);
   width: 100%;
-  // margin-top: 1.6rem;
 
   &__content {
     display: flex;
@@ -88,7 +87,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   position: relative;
 
   &__gradient {
@@ -187,7 +186,7 @@ body {
 
 .skills {
   background: #eee;
-  background-image: url("/img/palmer3gray.jpg");
+  background-image: url('/img/palmer3gray.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -391,6 +390,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: top;
+  color: darken(#444444, 2%);
 
   &__gradient {
     background-image: linear-gradient(rgba(#fff,1),rgba(#fff,.69));
