@@ -154,7 +154,12 @@ body {
         // text-align: justify;
         width: 90%;
         flex-grow: 1;
-        overflow: scroll;
+        overflow: hidden;
+
+        a {
+          text-decoration: underline;
+          text-decoration-style: dotted;
+        }
       }
     }
 
